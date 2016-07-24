@@ -25,6 +25,8 @@
         NSLog(@"Attempting to execute: '%@'", self.path);
         NSTask *task;
         @try {
+            [[NSFileManager defaultManager]
+             changeCurrentDirectoryPath:self.home];
             task = [NSTask launchedTaskWithLaunchPath:self.path arguments:[NSArray arrayWithObject:self.executable]];
         }
         @catch (NSException *exception) {
@@ -40,8 +42,12 @@
     if(self.executable == nil){
         self.executable = @".onwake";
     }
+    if(self.home == nil){
+        self.home = NSHomeDirectory();
+    }
+
     if(self.path == nil){
-        self.path = [NSHomeDirectory() stringByAppendingPathComponent:self.executable];
+        self.path = [self.home stringByAppendingPathComponent:self.executable];
     }
     //These notifications are filed on NSWorkspace's notification center, not the default
     // notification center. You will not receive sleep/wake notifications if you file
