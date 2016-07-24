@@ -9,6 +9,9 @@
 #import <Foundation/Foundation.h>
 
 @interface WakeWatcher : NSObject
+@property (nonatomic, retain) NSString *path;
+@property (nonatomic, retain) NSString *executable;
+
 
 - (void) registerNotifications;
 
