@@ -12,11 +12,16 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         NSLog(@"Starting Wake Watcher!");
-        
-        id watcher = [[WakeWatcher alloc] init];
-        NSLog(@"Watcher %@", watcher);
-        [watcher registerNotifications];
-        [[NSRunLoop currentRunLoop] run];
+        @try {
+            id watcher = [[WakeWatcher alloc] init];
+            NSLog(@"Watcher %@", watcher);
+            [watcher registerNotifications];
+            [[NSRunLoop currentRunLoop] run];
+        }
+        @catch (NSException *exception) {
+            NSLog(@"Watcher failed: %@", exception);
+        }
+        NSLog(@"Exiting Wake Watcher!");
     }
     return EXIT_SUCCESS;
 }
