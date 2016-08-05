@@ -3,7 +3,8 @@
 //  WakeWatcher
 //
 //  Created by Eric Kobrin on 7/23/16.
-//  Copyright (c) 2016 Eric Kobrin. All rights reserved.
+//  Released under CC0 1.0 (Public Domain)
+//    https://creativecommons.org/publicdomain/zero/1.0/
 //
 
 #import <Foundation/Foundation.h>

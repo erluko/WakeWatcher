@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		07CF3F7C1D439B8B0065466E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 07CF3F7B1D439B8B0065466E /* main.m */; };
 		07CF3F841D439C2E0065466E /* WakeWatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 07CF3F831D439C2E0065466E /* WakeWatcher.m */; };
+		07CF3F881D54A71A0065466E /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 07CF3F871D54A71A0065466E /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,7 @@
 		07CF3F7B1D439B8B0065466E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		07CF3F821D439C2E0065466E /* WakeWatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WakeWatcher.h; sourceTree = "<group>"; };
 		07CF3F831D439C2E0065466E /* WakeWatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WakeWatcher.m; sourceTree = "<group>"; };
+		07CF3F871D54A71A0065466E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +46,7 @@
 		07CF3F6F1D439B8B0065466E = {
 			isa = PBXGroup;
 			children = (
+				07CF3F871D54A71A0065466E /* README.md */,
 				07CF3F7A1D439B8B0065466E /* WakeWatcher */,
 				07CF3F791D439B8B0065466E /* Products */,
 			);
@@ -123,6 +126,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07CF3F881D54A71A0065466E /* README.md in Sources */,
 				07CF3F841D439C2E0065466E /* WakeWatcher.m in Sources */,
 				07CF3F7C1D439B8B0065466E /* main.m in Sources */,
 			);
