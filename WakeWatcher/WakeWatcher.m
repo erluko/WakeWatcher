@@ -8,9 +8,9 @@
 //
 
 #import "WakeWatcher.h"
+@import AppKit;
 
 @implementation WakeWatcher
-@import AppKit;
 
 
 - (void) receiveWakeNote: (NSNotification*) note
