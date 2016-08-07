@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		07CF3F7C1D439B8B0065466E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 07CF3F7B1D439B8B0065466E /* main.m */; };
 		07CF3F841D439C2E0065466E /* WakeWatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 07CF3F831D439C2E0065466E /* WakeWatcher.m */; };
-		07CF3F881D54A71A0065466E /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 07CF3F871D54A71A0065466E /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -126,7 +125,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07CF3F881D54A71A0065466E /* README.md in Sources */,
 				07CF3F841D439C2E0065466E /* WakeWatcher.m in Sources */,
 				07CF3F7C1D439B8B0065466E /* main.m in Sources */,
 			);
