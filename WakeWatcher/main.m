@@ -10,13 +10,13 @@
 
 
 #import <Foundation/Foundation.h>
-#import "wakeWatcher.h"
+#import "WakeWatcher.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         NSLog(@"Starting Wake Watcher!");
         @try {
-            id watcher = [[wakeWatcher alloc] init];
+            id watcher = [[WakeWatcher alloc] init];
             NSLog(@"Watcher %@", watcher);
             [watcher registerNotifications];
             [[NSRunLoop currentRunLoop] run];
